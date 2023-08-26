@@ -91,9 +91,44 @@
 -- SELECT * FROM mevalar;
 
 
-SELECT
-    name,
-    price
-INTO TABLE products_name_price
-FROM
-    products;
+-- SELECT
+--     name,
+--     price
+-- INTO TABLE products_name_price
+-- FROM
+--     products;
+
+
+
+-- ! Foods table
+
+-- CREATE TABLE foods (
+--     id SERIAL PRIMARY KEY,
+--     name VARCHAR(255) NOT NULL,
+--     price VARCHAR(255) NOT NULL
+-- );
+
+
+-- INSERT INTO foods (name, price)
+-- VALUES ('Hotdog', '10_000');
+
+
+-- SELECT * FROM foods;
+
+CREATE TABLE kurslar (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price VARCHAR(255) NOT NULL
+);
+
+INSERT INTO kurslar (name, price)
+VALUES ('Frontend', '320_00');
+
+INSERT INTO kurslar (name, price)
+VALUES ('Backend', '420_00');
+
+INSERT INTO kurslar (name, price)
+VALUES ('Grafik Dizayn', '400_00');
+
+INSERT INTO kurslar (name, price)
+VALUES ('3D MAX', '500_000');
